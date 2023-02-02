@@ -176,15 +176,15 @@ pychain = setup()
 
 # @TODO:
 # Add an input area where you can get a value for `sender` from the user.
-sender_info = st.text_input('sender')
+sender = st.text_input('sender')
 
 # @TODO:
 # Add an input area where you can get a value for `receiver` from the user.
-receiver_info = st.text_input('receiver')
+receiver = st.text_input('receiver')
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
-amount_value = st.text_input('amount')
+amount  = st.text_input('amount')
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]
